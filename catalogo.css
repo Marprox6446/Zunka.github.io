@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #838383, #ffffff); /* Color de fondo */
+}
+
+.catalog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #4b4b4b, #ffffff,); /* Fondo del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.animated-title {
+    font-size: 2.5em;
+    text-align: center;
+    color: #333; /* Color del título */
+    background-color: #f2f2f2; /* Fondo del título */
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.category h2 {
+    font-size: 1.5em;
+    color: #333; /* Color del título de la categoría */
+    border-bottom: 2px solid #ddd; /* Línea divisoria */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.event {
+    padding: 10px;
+    border: 1px solid #ddd; /* Borde alrededor de cada evento */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Fondo del evento */
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+.event h3 {
+    font-size: 1.2em;
+    color: #333; /* Color del título del evento */
+    margin-bottom: 5px;
+}
+
+.event p {
+    color: #666; /* Color del texto de la descripción */
+}
+
+/* Animación para el título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+  }
+  
+  .back-button:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  }
+
+
+  .category-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .category-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  

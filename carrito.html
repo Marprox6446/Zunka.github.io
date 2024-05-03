@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="car.css"> <!-- Enlace al archivo CSS para estilos -->
+</head>
+<body>
+    <div class="container">
+        <h1>Carrito de Compras</h1>
+        <div id="carritoContainer">
+            <h2>Tu Carrito</h2>
+            <ul id="listaCarrito">
+                <!-- Aquí se mostrarán los productos agregados al carrito -->
+            </ul>
+
+            <!-- Botón para eliminar el producto del carrito -->
+<button onclick="eliminarDelCarrito(index)">Eliminar</button>
+
+<!-- Botón para vaciar el carrito -->
+<button onclick="vaciarCarrito()">Vaciar Carrito</button>
+
+
+            <div id="resumenCarrito">
+                <p>Total de Productos: <span id="totalProductos">0</span></p>
+                <p>Total a Pagar: $<span id="totalPagar">0.00</span></p>
+            </div>
+        </div>
+        <button id="regresarBtn" class="button">Regresar al Catálogo</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ZUNKA. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="car.js"></script> <!-- Enlace al archivo JavaScript para la funcionalidad -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Estilos específicos para la página de bodas tradicionales */
+
+/* Ajustes generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3F51B5; /* Color de fondo del encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    color: #3F51B5; /* Color de los títulos de servicios */
+}
+
+footer {
+    background-color: #E0E0E0; /* Color de fondo del pie de página */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el botón de volver al catálogo */
+.back-button {
+    background-color: #3F51B5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1E88E5;
+    color: #FFF59D; /* Cambio de color al pasar el cursor */
+}
+
+.back-button:active {
+    transform: scale(0.95); /* Efecto de escala al hacer clic */
+}

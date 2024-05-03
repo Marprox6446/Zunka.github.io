@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px; /* Ajusta el tamaño máximo de tu logo según sea necesario */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s; /* Agregado para suavizar el cambio de color */
+}
+
+/* Efecto de hover para las opciones del menú */
+nav ul li:hover a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+
+nav ul li:hover a::before {
+  transform-origin: bottom left;
+}
+
+/* Cambio de color a morado al pasar el ratón sobre las opciones del menú */
+nav ul li a:hover {
+  color: purple;
+}
+
+/* Animación para las opciones del menú */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+nav ul li a {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Estilos para la sección anterior con fondo negro */
+.black-background-section {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px; /* Ajusta el espacio según sea necesario */
+}
+
+/* Contenedor de eventos */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.image-container {
+  border: 2px solid blue;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.right-container {
+  flex: 1;
+  text-align: center;
+}
+
+.text-content {
+  max-width: 400px;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Botón de regreso */
+.back-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Estilos para las preguntas y respuestas */
+.questions-container {
+  display: none; /* Oculta el contenedor de preguntas por defecto */
+  margin-top: 20px;
+  padding: 20px; /* Añade algún espacio de relleno para separar las preguntas */
+  background-color: #000000; /* Color de fondo para mejorar la legibilidad */
+  border-radius: 5px; /* Bordes redondeados para suavizar la apariencia */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para resaltar el contenedor */
+}
+
+/* Animación para el título */
+.title {
+  animation: blink-animation 1s infinite alternate;
+}
+
+@keyframes blink-animation {
+  from {
+      color: black;
+  }
+  to {
+      color: white;
+  }
+}
+
+/* Estilos para la sección del héroe con la imagen de fondo y el título */
+.hero-section {
+  background-image: url('fondoser.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px; /* Ajusta el espacio según sea necesario */
+}
+
+.hero-content h1 {
+  margin: 0;
+  font-size: 2em; /* Ajusta el tamaño del título según sea necesario */
+}
